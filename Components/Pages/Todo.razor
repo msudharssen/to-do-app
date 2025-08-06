@@ -1,0 +1,47 @@
+@page "/todo"
+
+@rendermode InteractiveServer
+
+<h3>Todo List, Currently have: @Incomplete()</h3>
+
+<ul>
+    @foreach(var item in todos){
+        <li>
+            <input type="checkbox" @bind="item.IsCompleted"/>
+            <input type="text" @bind="item.Title"/>
+        </li>
+    }
+</ul>
+
+<input @bind="newTodo"/>
+<button class="btn btn-primary" @onclick="AddToDo">Add Todo</button>
+
+
+
+
+
+@code{
+    private List<TodoItem> todos = new();
+    string newTodo = "";
+
+
+    void AddToDo(){
+        if (!string.IsNullOrWhiteSpace(newTodo))
+        {
+            todos.Add(new TodoItem { Title = newTodo, IsCompleted = false });
+            newTodo = "";
+        }
+    }
+
+    int Incomplete(){
+        int c = 0;
+        foreach(var item in todos){
+            if (!item.IsCompleted){
+                c+=1;
+            }
+
+        }
+        return c;
+    }
+
+}
