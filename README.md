@@ -32,20 +32,3 @@ A simple To-Do application built with Blazor and C#. This app demonstrates the u
 4. Open your browser and navigate to:
     https://localhost:5001
 
-BlazorApp1/
-├── Components/
-│   ├── _Imports.razor
-│   ├── App.razor
-│   ├── Routes.razor
-│   ├── Layout/
-│   │   ├── MainLayout.razor
-│   │   ├── MainLayout.razor.css
-│   │   └── NavMenu.razor
-│   └── Pages/
-├── wwwroot/
-│   ├── app.css
-│   ├── favicon.png
-│   └── lib/
-├── [Program.cs](http://_vscodecontentref_/1)
-├── [appsettings.json](http://_vscodecontentref_/2)
-└── [README.md](http://_vscodecontentref_/3)
