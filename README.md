@@ -4,10 +4,9 @@ A simple To-Do application built with Blazor and C#. This app demonstrates the u
 
 ## Features
 
-- Add, edit, and delete to-do items.
+- Add, Mark to-do items.
 - Responsive UI built with Blazor components.
 - Organized project structure with reusable components.
-- Styling with CSS scoped to components.
 
 ## Getting Started
 
@@ -23,10 +22,12 @@ A simple To-Do application built with Blazor and C#. This app demonstrates the u
    git clone <repository-url>
    cd BlazorApp1
 
-2. Restore Dependencies
+2. Restore Dependencies:
+    ```bash
     dotnet restore
 
 3. Run the Application:
+    ```bash
     dotnet run
 
 4. Open your browser and navigate to:
